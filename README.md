@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Create HLI App
 
-## Getting Started
+빌드 구성 없이 새 프로젝트 시작하기
 
-First, run the development server:
+## 🚀 Getting Started
+
+다음 명령을 실행하여 `create-hli-app`으로 새 프로젝트를 시작한다.
 
 ```bash
-npm run dev
+yarn create next-app <my-app> -e https://github.com/chachooon/create-hli-app.git
 # or
-yarn dev
+npx create-next-app <my-app> -e https://github.com/chachooon/create-hli-app.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+설치가 완료되면 `<my-app>` 디렉토리로 이동하여 다음 명령으로 개발 서버를 실행한다.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+# 개발 서버 실행
+yarn dev
+# 스토리북 개발 서버 실행
+yarn storybook
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+브라우저에서 [http://localhost:3000](http://localhost:3000)를 열고 새 프로젝트를 확인한다.
 
-## Learn More
+## Tech Stacks
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Next.js 12.2 이상
+- [x] React 18.0.2 이상
+- [x] Typescript 4.7 이상
+- [x] Emotion 11 이상
+- [x] Storybook 6.5 이상
+- [ ] React Query
+- [ ] Recoil
+- [ ] UI Library (hli-ds)
+- [x] [Jest](https://nextjs.org/docs/testing#jest-and-react-testing-library)
+- [ ] [Cypress](https://nextjs.org/docs/testing#cypress)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## References
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [React + TS boilerplate 제작기](https://velog.io/@jjunyjjuny/React-TS-boilerplate-%EC%A0%9C%EC%9E%91%EA%B8%B0-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1)
+- [Generate your web-app boilerplate like create-react-app does.](https://dev.to/leopold/generate-your-web-app-boilerplate-like-create-react-app-does-301p)
+- [facebook/create-react-app](https://github.com/facebook/create-react-app)
+- [react-parcel-app](https://github.com/Leopold-V/react-parcel-app)
